@@ -1,0 +1,53 @@
+*{margin: 0%;padding: 0%;}
+ul, li{list-style: none;}
+a{text-decoration: none;color: white;}
+body{background:  #ffffff ;}
+.container{width: 1200px; margin: 0% auto;}
+header{width:1200px;height: 100px;position: relative;z-index: 50;background:  #555 ;}
+.logo{position: absolute;margin-top: 30px;}
+nav{width: 1200px;margin: 0 auto;}
+#main_menu{position: absolute;right: 0%; top: 30px;}
+#main_menu> li{float: left;width: 200px;border: 1px solid #ccc;}
+#main_menu ul >li{border: 0.1px solid #ccc;}
+#main_menu > li a{
+    display: block;
+    /* border: 1px solid red; */
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+#main_menu > li > a:hover{
+    background:#7b422e;
+    color: #333;
+  }
+.sub_menu{height: 40px;display: none;background: rgba(218, 193, 139, 0.2);}
+.sub_menu li{background: #bb692d;}
+#main_menu .sub_menu li:hover{
+background: #83d154;
+}    
+.sub_menu li a{text-align: center;height: 40px;}
+
+/* main_visual */
+/* .main_visual{width:1200px;height: 600px;overflow: hidden;margin-bottom: 5rem;} */
+.slider{height: 600px;position: relative;overflow: hidden;}
+.sliders{display: block;float: left;width: 3600px;height: 600px;margin-left: 0px;transition: 0.5;}
+.slider > .sliders img{width: 33.33%;float: left;}
+
+/* 퀵메뉴 */
+.quic{width: 1200px;height: 100px;background: #555;position: relative;}
+.quic h2{text-align: center;padding: 30px;color: #999999;}
+/* section part */
+section{background: #777;width: 1200px;height: 220px;margin-top: 5rem}
+section div{float: left;}
+.noti{width: 33.33%;height: 220px; background: #555;}
+.noti h2{padding: 10px;color: #999999;}
+.noti p{font-size:13px;line-height: 30px;color: white;margin-left: 10px;}
+.gall{width: 33.33%;height: 220px;}
+.gall img{float: left;margin-left: 0px;margin-top: 60px;position: relative;margin-left: 2px;}
+.gall h3{position: absolute;left: 50%;transform: translatex(-50%);padding: 10px;color: white;}
+.banner{width: 33.33%;height: 220px; background: #222;}
+footer{width: 1200px; height: 100px; clear: both;margin-top: 7rem;position: relative;
+       text-align: center; line-height: 25px;font-size: 14px;
+}
+.bottom_logo{position: absolute;margin-top: 30px;margin-left: 10px;}
+.co{position: absolute;right: 20px;top: 45px;}

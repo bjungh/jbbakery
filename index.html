@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7차평가 베이커리</title>
+    <script src="js/jquery-1.12.3.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo"><img src="images/LOGO.png" alt="로고"></div>
+        <nav>
+                <ul id="main_menu">
+                  <li><a href="#">JB소개</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">브랜드 스토리</a></li>
+                      <li><a href="#">JB가맹점</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">제품 소개</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">빵</a></li>
+                      <li><a href="#">케이크</a></li>
+                      <li><a href="#">음료</a></li>
+                      <li><a href="#">선물</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">빵 만들기</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">제빵 재료</a></li>
+                      <li><a href="#">제빵 도구</a></li>
+                      <li><a href="#">제빵 포장도구</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">커뮤니티</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">나만의 레시피</a></li>
+                      <li><a href="#">내가만든 빵</a></li>
+                      <li><a href="#">제빵 노하우</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+    </header>
+    <!--퀵메뉴-->
+    
+        <div class="slider">
+              <div class="sliders">
+                <img src="images/img01.png" alt="1">
+                <img src="images/img02.png" alt="2">
+                <img src="images/img03.png" alt="3">
+              </div>
+        </div>
+        <div class="quic">
+         <a href=""><h2>고수의 레시피 | 모임 일정 | 식품안전관리</h2></a> 
+        </div>  
+        
+     
+    <!--메인컨텐츠-->        
+  
+    <section>
+        <div class="noti">
+          <h2>공지사항</h2>
+          
+            <a href=""><p>제1회 JB 베이커리 워크숍에 초대합니다(서울권).	2017-12-12 </p></a> 
+            <a href=""><p>올림픽공원 카페 초보 여성 창업을 추천받습니다. 	2017-12-10</p></a>
+            <a href=""><p>맛과 영양, 환경문제까지 생각하는 베이커리! 	2018-03-09 </p></a>
+            <a href=""><p>고품질 크림으로 만든 디저트로 달콤하게 겨울나기 2018-03-07</p></a>
+            <a href=""><p>온가족이 함께 즐기는 베이킹 체험 교실 		2018-03-05</p></a>
+          
+        </div>
+        <div class="gall">
+          <h3>오늘의 메뉴</h3>
+          <a href="#" onclick="window.open('popup.html','새창', 'width=600, height=800,left=800, top=200 ')"><img src="images/gall01.png" alt="팝업"></a>
+          <a href="#"><img src="images/gall02.png" alt="메뉴"></a>
+          <a href="#"><img src="images/gall03.png" alt="메뉴2"></a>
+        </div>
+        <div class="banner">
+         <a href=""><img src="images/banner.png" alt="배너이미지"></a> 
+        </div>
+    </section>
+
+    <!--푸터-->
+    <footer>
+      <div class="co">
+        페밀리사이트 : <a href="#">(주)아침에 제과</a> 
+      </div>
+      <div class="bottom_logo">
+        <img src="images/LOGO.png" alt="로고">
+      </div>
+        <div>
+          법적고지 |
+          개인정보취급방침 |
+          개인정보처리방침
+        </div> 
+        상호명:(주)JB컴퍼니<br>
+        대표자:윤정우
+        개인정보관리책임자:김선정
+        상담전화:1588-0789
+      <address>
+          사업장주소:서울특별시 금천구 가산동 가산디지털2로
+      </address>
+    </footer>
+  </div>
+    
+  <script>
+      $(function(){
+           
+            $('.sub_menu').hide();
+            
+            $('#main_menu li').hover(
+                function(){
+                    
+                    $(this).find('.sub_menu').stop().slideDown(200);
+                },function(){
+                    
+                    $(this).find('.sub_menu').stop().slideUp();
+                }
+            )
+        })
+  </script>
+  <script>
+    
+    $(function(){
+      var img_num = 0;  
+      var img_width = 1200;  
+      var duration = 3000;  
+
+      var play_slider = setInterval(function(){
+
+        if(img_num == 3){ img_num = 0;}
+        $('.sliders').css('margin-left', -(img_width * img_num) + 'px');
+        img_num++;
+      }, duration)
+
+    });
+
+  
+
+    
+  </script>
+</body>
+</html>
+  
+  
+
+
+    
+
